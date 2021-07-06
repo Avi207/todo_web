@@ -1,6 +1,6 @@
 const express = require('express');
 
-const port = 7000;
+const port = process.env.PORT || 7000;
 const db = require('./config/mongoose');
 const Task = require('./models/task');
 
